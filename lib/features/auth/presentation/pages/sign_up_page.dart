@@ -124,7 +124,7 @@ class _RegisterView extends StatelessWidget {
                       },
                     ),
                     const SizedBox(height: 24),
-                    primaryButton(
+                    PrimaryButton(
                       text: 'Sign Up',
                       onPressed: () => Navigator.push(
                         context,

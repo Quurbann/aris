@@ -1,4 +1,6 @@
 import 'package:aris/features/auth/presentation/provider/select_language_provider.dart';
+import 'package:aris/features/courses/presentation/pages/home_page.dart';
+import 'package:aris/features/courses/presentation/provider/courses_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../widgets/language_item_widget.dart';
@@ -37,11 +39,8 @@ class SelectLanguagePage extends StatelessWidget {
                     onTap: () {
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(
-                          builder: (_) => const Scaffold(
-                            body: Center(child: Text('Home Page')),
-                          ),
-                        ),
+                        MaterialPageRoute(builder: (_) => ChangeNotifierProvider(create: (BuildContext context) => CoursesProvider(),
+                        child: HomePage())),
                       );
                     },
                   );

@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   provider: ^6.1.5+1
   svg_flutter: ^0.0.1
+  shared_preferences: ^2.5.5
 
 dev_dependencies:
   flutter_test:
@@ -62,6 +63,7 @@ flutter:
   assets:
     - assets/images/png/initial_flow/
     - assets/images/png/flags/
+    - assets/images/png/courses/
     - assets/images/svg/auth/
 
   # An image asset can refer to one or more resolution-specific "variants", see
